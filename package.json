@@ -19,7 +19,6 @@
     "quantaex",
     "react-scripts-ts"
   ],
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "bugs": {
     "url": "https://github.com/qfinex/react-scripts-ts/issues"
   },
