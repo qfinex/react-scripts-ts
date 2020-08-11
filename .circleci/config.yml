@@ -1,0 +1,19 @@
+version: 2
+jobs:
+  test-template:
+    docker:
+      - image: circleci/node:12.18.2-browsers
+    working_directory: ~/template
+    steps:
+      - checkout
+      - run: yarn
+      - run: yarn pack:rename
+      - run: npx create-react-app ~/template/test-template --scripts-version=/home/circleci/template/qfinex-react-scripts-ts.tgz
+      - run: cd ~/template/test-template && yarn test --passWithNoTests
+      
+workflows:
+  version: 2
+  tests:
+    jobs:
+      - test-template
+    

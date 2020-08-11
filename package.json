@@ -1,0 +1,116 @@
+{
+  "name": "@qfinex/react-scripts-ts",
+  "version": "4.0.9",
+  "description": "originated from react-scripts-ts, but we make it much upgraded, more advance",
+  "repository": "qfinex/react-scripts-ts",
+  "license": "MIT",
+  "author": "QFinex",
+  "private": false,
+  "engines": {
+    "node": ">=6"
+  },
+  "keywords": [
+    "qfinex",
+    "peatio",
+    "bitcoin",
+    "cryptocurrency",
+    "ethereum",
+    "blockchain",
+    "quantaex",
+    "react-scripts-ts"
+  ],
+  "bugs": {
+    "url": "https://github.com/qfinex/react-scripts-ts/issues"
+  },
+  "scripts": {
+    "rename": "renamer --find '/(\\-)(\\d+\\.)?(\\d+\\.)?(\\*|\\d+)/' --replace '' './*.tgz'",
+    "pack": "npm pack",
+    "pack:rename": "npm-run-all --sequential pack rename",
+    "release": "standard-version"
+  },
+  "files": [
+    "bin",
+    "config",
+    "scripts",
+    "template",
+    "utils"
+  ],
+  "bin": {
+    "react-scripts-ts": "./bin/react-scripts-ts.js"
+  },
+  "dependencies": {
+    "@babel/core": "^7.3.4",
+    "@svgr/webpack": "^4.1.0",
+    "babel-eslint": "9.0.0",
+    "babel-jest": "23.6.0",
+    "babel-loader": "8.0.4",
+    "babel-plugin-named-asset-import": "^0.2.0",
+    "babel-preset-react-app": "^5.0.0",
+    "bfj": "6.1.1",
+    "case-sensitive-paths-webpack-plugin": "2.1.2",
+    "chalk": "2.4.1",
+    "css-loader": "1.0.0",
+    "dotenv": "6.0.0",
+    "dotenv-expand": "4.2.0",
+    "eslint": "5.6.0",
+    "eslint-config-react-app": "^3.0.0",
+    "eslint-loader": "2.1.1",
+    "eslint-plugin-flowtype": "2.50.1",
+    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-jsx-a11y": "6.1.1",
+    "eslint-plugin-react": "7.11.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "2.0.0",
+    "fork-ts-checker-webpack-plugin": "0.4.9",
+    "fs-extra": "7.0.0",
+    "html-webpack-plugin": "^4.0.0-beta.5",
+    "identity-obj-proxy": "3.0.0",
+    "jest": "23.6.0",
+    "mini-css-extract-plugin": "0.4.3",
+    "optimize-css-assets-webpack-plugin": "5.0.1",
+    "postcss-flexbugs-fixes": "4.1.0",
+    "postcss-loader": "3.0.0",
+    "postcss-preset-env": "6.0.6",
+    "postcss-safe-parser": "4.0.1",
+    "react-app-polyfill": "^0.1.1",
+    "react-dev-utils": "^6.0.1",
+    "resolve": "1.8.1",
+    "sass-loader": "7.1.0",
+    "source-map-loader": "^0.2.1",
+    "style-loader": "0.23.0",
+    "terser-webpack-plugin": "1.1.0",
+    "thread-loader": "1.2.0",
+    "ts-jest": "22.0.1",
+    "ts-loader": "4.x.x",
+    "tsconfig-paths-webpack-plugin": "^2.0.0",
+    "tslint": "^5.7.0",
+    "tslint-config-prettier": "^1.10.0",
+    "tslint-react": "^3.2.0",
+    "url-loader": "1.1.1",
+    "webpack": "4.19.1",
+    "webpack-dev-server": "3.1.9",
+    "webpack-manifest-plugin": "2.0.4",
+    "workbox-core": "4",
+    "workbox-webpack-plugin": "3.6.1"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "renamer": "^1.1.1",
+    "standard-version": "^5.0.2",
+    "typescript": "^3.9.7"
+  },
+  "peerDependencies": {
+    "typescript": "3.x.x"
+  },
+  "optionalDependencies": {
+    "fsevents": "^2.0.1"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
